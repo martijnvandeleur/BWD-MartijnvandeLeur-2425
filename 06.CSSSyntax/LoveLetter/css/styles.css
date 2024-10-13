@@ -1,0 +1,61 @@
+html {
+    background-image: url(../img/tile.png);
+ }
+ 
+ body {
+    background-image: url(../img/bg.png);
+    background-size: 100%;
+    border: 10px solid white;
+    font-family: Lato, Arial, sans-serif;
+    height: 600px;
+    margin: 20px auto;
+    max-width: 300px;   
+    padding: 40px 100px;
+ }
+
+ h1 {
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+    font-weight: 500;
+    font-style: normal;
+ }
+
+ p {
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+ }
+
+ span {
+    color: #870e0e;
+    font-size: 27px;
+ }
+ 
+ mark {
+    background-color: rgb(240, 177, 177);
+    text-transform: uppercase;
+    font-weight: bold;
+ }
+
+ .salute {
+    font-size: 15px;
+    text-align: right;
+ }
+ 
+.date {
+    font-size: 12px;
+    text-align: right;
+}
+
+ footer {
+    margin-top: 40px;
+ }
+ 
+ footer p {
+    margin: 0;
+ }
+ 
+ .date {
+    margin-top: 10px;
+ }
