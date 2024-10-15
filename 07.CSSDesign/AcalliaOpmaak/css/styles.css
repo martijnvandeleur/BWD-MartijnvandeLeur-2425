@@ -1,0 +1,166 @@
+/**
+ *
+ * Common styles
+ *
+ * @author Martijn van de Leur
+ *
+ */
+
+/* ===========================================
+   General
+   =========================================== */
+
+body {
+   background-color: #dfdfdf;
+   font-family: 'Roboto'
+}
+
+
+/* ===========================================
+   Menu
+   =========================================== */
+
+/* menu styles here */
+
+header {
+   background-color: white;
+}
+
+.active  {
+   background-color:#b52025 ;
+   padding-bottom: 5px;
+   padding-left: 4px;
+   padding-right: 4px;
+   padding-top: 4px;
+   color: white
+}
+
+nav li {
+   background-color: white;
+   display: inline-block;
+   letter-spacing: normal;
+   line-height: normal;
+   list-style: none;
+   padding-bottom: 2px;
+   padding-left: 2px;
+   padding-right: 2px;
+   padding-top: 2px;
+}
+
+nav li:hover {
+   background-color:#b52025;
+   padding-bottom: 5px;
+   padding-left: 4px;
+   padding-right: 4px;
+   padding-top: 4px;
+}
+
+nav li a {
+   color: black;
+   text-decoration: none;
+   font-weight: 250;
+}
+
+nav li a:hover {
+   color: white;
+}
+
+
+/* ===========================================
+   Banner
+   =========================================== */
+
+#banner {   
+   background-image: url(../img/banner.jpg);
+   background-repeat: no-repeat;
+   border-color: #b52025;
+   border-width: 5px;
+   box-shadow: 0 3px 10px;
+}
+
+#banner p {
+   display: block;
+   background: rgba(0,0,0,0.5);
+   color: white;
+   line-height: 0.7cm;
+}
+
+
+
+/* ===========================================
+   Main
+   =========================================== */
+main {
+   background-color: white;
+}
+
+p {
+   line-height: 1.6;
+}
+
+   h3 {
+   color: #b52025;
+   text-transform: uppercase;
+}
+
+.minibanner {
+   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.more {
+   background-color: white;
+   border: solid;
+   border-color: #b52025;
+   border-radius: 4px;
+   border-width: 1px;
+   display: inline-block;
+   font-weight: 450;
+   padding-bottom: 5px;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 2px;
+   position: absolute;
+   right: 40%;
+}
+
+.more:hover {
+   background-color:#FDEAEB;
+   transition: background 0.3s;
+}
+
+#content a {
+   color:#b52025;
+   text-align: center;
+   text-decoration:none;
+   text-transform: none;
+}
+
+#content a:hover {
+   text-decoration: underline;
+}
+
+#email {
+   background-color: #FDEAEB;
+}
+
+input {
+   background-color: #b52025;
+   color:#FDEAEB;
+}
+
+input:hover {
+   background-color:#b52025;
+   transition: background 0.3s;
+}
+
+
+/* ===========================================
+   Footer
+   =========================================== */
+
+footer {
+   text-align: center;
+   border-top: dotted;
+   border-width: 2px;
+   border-color: #dfdfdf ;
+}
