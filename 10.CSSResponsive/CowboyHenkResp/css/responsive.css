@@ -1,0 +1,39 @@
+/* ===========================================
+   Media queries
+   =========================================== */
+
+@media (min-width: 500px) {
+   .post__comments {
+      display: none;
+   }
+}
+
+@media (min-width: 700px) {
+   .post__comments {
+      display: block;
+   }
+
+   .site__footer {
+      flex-direction: row;
+      align-items: center;
+   }
+
+   body {
+      font-size: 14px;
+   }
+}
+
+@media (min-width: 900px) {
+   nav ul {
+      flex-direction: row;
+   }
+
+   main {
+      display: flex;
+   }
+
+   body {
+      font-size: 15px;
+   }
+}
+

@@ -1,0 +1,315 @@
+/**
+ * Styles for The Lonely Cowboy
+ *
+ * @author Rogier van der Linde
+ *
+ */
+
+
+/* ===========================================
+   Reset
+   =========================================== */
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+/* ===========================================
+   General
+   =========================================== */
+
+/* elements */
+
+body {
+   background-color: #f1f1f1;
+   font-family: Raleway, sans-serif;
+   font-size: 16px;
+   line-height: 1.5;
+   margin: 0 auto;
+   max-width: 1200px;
+}
+
+a {
+   color: #000;
+   text-decoration: none;
+}
+
+img {
+   border: 0;
+   max-width: 100%;
+}
+
+p {
+   margin-bottom: 1em;
+}
+
+ul {
+   list-style: none;
+}
+
+/* general classes */
+
+.inverted {
+   background-color: #000;
+   color: #fff;
+   padding: 0 0.5em;
+}
+
+.card {
+   background: #fff;
+   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+   margin-bottom: 2em;
+}
+
+.card__title {
+   background-color: #f1f1f1;
+   font-size: 1.3em;
+   font-weight: 400;
+   padding: 0.7em 1em;
+}
+
+.card__container {
+   padding: 1em;
+}
+
+/* buttons */
+
+.button {
+   border: 1px solid #ccc;
+   color: #000;
+   display: inline-block;
+   font-weight: bold;
+   padding: 0.5em 1em;
+   text-transform: uppercase;
+   transition: background 0.2s;
+}
+
+.button:not(.inactive):hover {
+   background-color: #ccc;
+}
+
+.button.inactive {
+   cursor: not-allowed;
+   opacity: 0.3;
+}
+
+.button--dark {
+   background-color: #000;
+   border-color: #000;
+   color: #fff;
+   padding: 0.6em 1.2em;
+}
+
+.button--dark:not(.inactive):hover {
+   background-color: #ccc;
+   color: #000;
+}
+
+/* ===========================================
+      Header
+      =========================================== */
+
+header {
+   padding: 2em 1em;
+}
+
+.header__title {
+   font-size: 2.5em;
+   font-weight: bold;
+   margin: 10px 0;
+   text-align: center;
+}
+
+/* animation */
+
+@keyframes stretch {
+   0% {
+      transform: scale(0, 0);
+   }
+}
+
+.header__tagline {
+   animation: stretch 2s;
+   margin: 1em 0 2em 0;
+   text-align: center;
+   transform: scale(1, 1);
+}
+
+/* nav */
+
+nav ul {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+}
+
+
+nav li.active,
+nav li:hover {
+   background-color: #ccc;
+}
+
+nav a {
+   display: block;
+   padding: 0.5em 1em;
+}
+
+/* ===========================================
+   Main
+   =========================================== */
+
+main {
+   display: grid;
+   gap: 2em;
+   grid-template-columns: repeat(2, 760px) repeat(3 380px);
+   padding: 2em 1em;
+}
+
+/* left, blogposts */
+
+.post__title {
+   font-size: 1.5em;
+   font-weight: bold;
+}
+
+.post__subtitle {
+   font-style: italic;
+   font-size: 1.2em;
+   margin: 0.5em 0;
+}
+
+.post__content {
+   margin: 1.5em 0;
+}
+
+.post__date {
+   opacity: 0.60;
+}
+
+.post__footer {
+   align-items: flex-end;
+   display: flex;
+   justify-content: space-between;
+}
+
+.post__badge {
+   background-color: #000;
+   border-radius: 50%;
+   color: #fff;
+   display: inline-block;
+   font-weight: normal;
+   height: 2em;
+   line-height: 2em;
+   margin-left: 1em;
+   text-align: center;
+   width: 2em;
+}
+   
+.post__comments {
+   display: block;
+   font-weight: bold;
+}
+
+/* about me card */
+
+.about__title {
+   font-size: 1.35em;
+   margin-bottom: 1em;
+}
+
+.about__content {
+   margin-bottom: 1em;
+}
+
+
+/* popular card */
+
+.popular__visual {
+   float: left;
+   margin-right: 1em;
+   width: 130px;
+}
+
+.popular__item {
+   border-bottom: 1px solid #ddd;
+   overflow: hidden;
+   padding: 16px;
+}
+
+.popular__item:hover {
+   background-color: #ccc;
+}
+
+.popular__title {
+   font-size: 1.2em;
+   font-weight: normal;
+   margin-bottom: 0.5em;
+}
+
+.popular__more {
+   color: #982216;
+   margin-left: 1em;
+}
+
+/* tags card */
+
+.taglist {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 0.5em;
+   padding: 16px;
+}
+
+.taglist a {
+   background-color: #f1f1f1;
+   color: #000;
+   display: inline-block;
+   font-size: 0.7em;
+   padding: 0.5em;
+}
+
+
+/* ===========================================
+   Footer
+   =========================================== */
+
+.site__footer {
+   align-items: end;
+   background-color: #666;
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   justify-content: space-between;
+   padding: 2em 1em;
+}
+
+.site__footer a {
+   color: #fff;
+}
+
+.footer__buttons {
+   display: flex;
+   gap: 0.5em;
+}
+
+/* social icons */
+
+.social__list {
+   display: flex;
+   gap: 1em;
+}
+
+.social__title {
+   font-size: 1.2em;
+   font-weight: normal;
+   margin-bottom: 0.5em;
+   text-align: right;
+}
+
+.social__list a {
+   font-size: 1.5em;
+}
