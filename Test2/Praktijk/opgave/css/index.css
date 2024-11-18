@@ -1,0 +1,186 @@
+/* general */
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+}
+
+
+/* header */
+
+header {
+    background-color: #333333;
+    border: #C92C2F;
+    border-style: none none solid none;
+}
+
+.header__title {
+    font-family: 'Dancing Script', serif;
+    color: white;
+}
+
+header > .wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    background-color: #5C5C5C;
+    border-radius: 3px;
+    padding: 13px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    background-color: #7D7D7D;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+header a:hover {
+    background-color: #C92C2F;
+}
+
+#header__logo {
+    max-width: 100px;
+}
+
+/* main */
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+}
+
+body em {
+    color:#C92C2F;
+}
+
+.main__intro img {
+    max-height: 75px;
+    max-width: 75px;
+}
+
+.main__intro {
+    display: flex;
+}
+
+.main__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.facts {
+    background-color: #666666;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.facts h3 {
+    color: white;
+}
+
+.facts ul {
+    list-style: none;
+    display: flex;
+    align-self: center;
+    gap: 10px;
+}
+
+.facts li {
+    color: white;
+    background-color: #333333;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.main__content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__content aside {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.main__content a {
+    text-decoration: none;
+    color: #C92C2F;
+}
+
+.main__content ul {
+    list-style: none;
+}
+
+.gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.gallery__item img{
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+
+/* doormat */
+
+.doormat {
+    background-color: #333333;
+    display: flex;
+    align-content: center;
+}
+
+.doormat__section-left {
+    color: white;
+}
+
+.doormat__section-middle {
+    color: white;
+}
+
+.doormat__section-middle ul{
+    list-style: none;
+}
+
+.doormat__section-middle a {
+    text-decoration: none;
+    color: white;
+}
+
+.doormat__section-right {
+    color: white;
+}
+
+.doormat__section-right ul{
+    list-style: none;
+}
+
+.doormat__section-right a {
+    text-decoration: none;
+    color: white;
+}
+
+/* footer */
+
+footer {
+    background-color: #333333;
+}

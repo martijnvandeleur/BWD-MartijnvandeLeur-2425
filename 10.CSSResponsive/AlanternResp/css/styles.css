@@ -1,0 +1,407 @@
+/*
+ * Main styles
+ *
+ * @author Rogier van der Linde <rogier@bitmatters.be>
+ */
+
+
+/* ==========================================================================
+   General styles
+   ========================================================================== */
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   color: #656565;
+   font-family: 'Open Sans', Arial;
+   font-size: 14px;
+   font-weight: 300;
+   line-height: 1.6em;
+}
+
+hr {
+   border: none;
+   border-bottom: 1px solid #e6e6e6;
+   margin-top: 50px;
+}
+
+img {
+   border: 0;
+   max-width: 100%;
+}
+
+.wrapper {
+   margin: 0 auto;
+   max-width: 1200px;
+   padding: 0 20px;
+}
+
+.btn {
+   background: #F03C02;
+   color: #fff;
+   display: inline-block;
+   font-size: 14px;
+   padding: 5px 10px;
+   text-decoration: none;
+   text-transform: uppercase;
+   transition: background 0.3s;
+   white-space: nowrap;
+}
+
+.btn:hover {
+   background-color: black;
+}
+
+.btn-largeround {
+   border-radius: 24px;
+   font-size: 14px;
+   padding: 11px 19px;
+}
+
+.sectiontitle {
+   font-size: 28px;
+   font-weight: 300;
+   margin-bottom: 50px;
+}
+
+.sectiontitle strong {
+   font-weight: 700;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+header .wrapper {
+   display: flex;
+   justify-content: space-between;
+   padding: 30px 20px;
+}
+
+/* logo */
+
+.logo {
+   color: #353535;
+   display: block;
+   flex: 0 0 200px;
+   line-height: 21px;
+   margin-bottom: 20px;
+   text-decoration: none;
+}
+
+.logo img {
+   margin-bottom: 10px;
+}
+
+/* nav */
+
+nav ul {
+   display: flex;
+   gap: 30px;
+   list-style: none;
+}
+
+nav a {
+   color: #111;
+   font-size: 13px;
+   text-decoration: none;
+   text-transform: uppercase;
+   transition: color 0.3s;
+}
+
+nav a:hover {
+   color: #F03C02;
+}
+
+nav .active a {
+   color: #F03C02;
+   font-weight: bold;
+}
+
+
+/* ==========================================================================
+   Banner
+   ========================================================================== */
+
+.body__banner {
+   align-items: flex-end;
+   background-color: #A49488;
+   background-image: url(../img/banner.jpg);
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   display: flex;
+   padding: 20px 20px 20px 80px;
+   padding-top: calc(10vw);
+}
+
+.banner__box {
+   background-color: black;
+   border-bottom: 5px solid #F03C02;
+   color: white;
+   margin-bottom: 20px;
+   padding: 20px;
+   max-width: 350px;
+}
+
+.banner__box h2 {
+   font-size: 26px;
+   font-weight: 300;
+   margin-bottom: 22px;
+}
+
+.banner__box h2 strong {
+   font-weight: 700;
+}
+
+.banner__box p {
+   margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   Request quote
+   ========================================================================== */
+
+.body__quote {
+   background: #f9f9f9;
+   padding: 50px 0;
+}
+
+.body__quote .wrapper {
+   align-items: center;
+   display: flex;
+   justify-content: space-between;
+}
+
+.quote__tagline {
+   font-size: 34px;
+   line-height: 1.6em;
+}
+
+.quote__tagline strong {
+   color: #F03C02;
+   font-weight: 700;
+}
+
+/* ==========================================================================
+   Main
+   ========================================================================== */
+
+main {
+   padding: 25px 0;
+}
+
+main > section {
+   padding: 25px 0;
+}
+
+/* services */
+   
+.services {
+   display: flex;
+   gap: 30px;
+   justify-content: space-between;
+}
+
+.service {
+   text-align: center;
+   width: calc((100% - 3 * 30px) / 4);
+}
+
+.service h3 {
+   color: #353535;
+   font-weight: 300;
+   margin-bottom: 20px;
+}
+
+.service p {
+   margin-bottom: 10px;
+}
+
+.service a {
+   color: #F03C02;
+   text-decoration: none;
+}
+
+.service a:hover {
+   text-decoration: underline;
+}
+
+.service .fas::before {
+   background-color: #F03C02;
+   border-radius: 40px;
+   color: white;
+   display: block;
+   height: 40px;
+   font-size: 30px;
+   line-height: 40px;
+   margin-bottom: 20px;
+   padding: 12px;
+   width: 40px;
+}
+
+/* recent works */
+   
+.works {
+   column-gap: 2.66%;
+   display: flex;
+   flex-wrap: wrap;
+   row-gap: 25px;
+}
+
+.work {
+   width: 23%;
+}
+
+.work figcaption::before {
+   content: "▹";
+   margin-right: 10px;
+}
+
+/* partners */
+
+.partners ul {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+   list-style: none;
+}
+
+.partners li {
+   border: 4px solid #e9e9e9;
+   width: 150px;
+}
+
+.partners a,
+.partners img {
+   display: block;
+   overflow: hidden;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+footer {
+   background-color: black;
+   color: #919191;
+   padding-bottom: 30px;
+}
+
+/* doormat */
+
+.footer__doormat {
+   background-color: black;
+   background: linear-gradient(0deg, rgba(0, 0, 0, 1) 18%, rgba(68, 68, 68, 1) 60%);
+   color: #919191;
+   padding: 50px 0;
+}
+
+.footer__doormat .wrapper {
+   display: flex;
+   column-gap: 3%; 
+   justify-content: space-between;
+}
+
+.footer__doormat .wrapper section {
+   flex: 1 1 0;
+   margin-bottom: 40px;
+}
+
+.footer__doormat h3 {
+   color: #eee;
+   font-size: 24px;
+   font-weight: 300;
+   margin-bottom: 20px;
+}
+
+.footer__doormat ul {
+   list-style: none;
+}
+
+.footer__doormat a {
+   color: #919191;
+   text-decoration: none;
+}
+
+.footer__doormat a {
+   color: #919191;
+   text-decoration: none;
+}
+
+.footer__doormat .thumbnails {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, 50px);
+   gap: 10px;
+}
+
+.footer__doormat .thumbnails img {
+   display: block;
+}
+
+address {
+   font-style: normal;
+}
+
+address p {
+   margin-bottom: 10px;
+}
+
+.footer__doormat .fas {
+   margin-right: 10px;
+}
+
+/* footer bottom */
+
+.footer__bottom .wrapper {
+   display: flex;
+   justify-content: space-between;
+}
+
+.footer__bottom small {
+   display: block;
+}
+
+.footer__bottom .social {
+   display: flex;
+   gap: 10px;
+   list-style: none;
+}
+
+.footer__bottom .social a {
+   background-color: #444;
+   box-sizing: content-box;
+   color: white;
+   display: block;
+   height: 20px;
+   line-height: 20px;
+   padding: 5px;
+   text-align: center;
+   width: 20px;
+}
+
+/* ==========================================================================
+   BACK TO TOP
+   ========================================================================== */
+
+#top {
+   background-color: #F03C02;
+   bottom: 0px;
+   color: white;
+   display: block;
+   height: 32px;
+   line-height: 32px;
+   position: fixed;
+   right: 20px;
+   text-align: center;
+   text-decoration: none;
+   transition: padding 0.3s;
+   width: 32px;
+}
+
+#top:hover {
+   padding-bottom: 50px;
+}

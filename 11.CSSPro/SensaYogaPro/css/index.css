@@ -1,0 +1,78 @@
+/* ===========================================
+   Banner
+   =========================================== */
+
+#banner {
+   background-image: url(../img/banner.jpg);
+   background-size: cover;
+}
+
+#banner .wrapper {
+   min-height: 300px;
+}
+   
+.banner_box .btn-cta {
+   font-size: 18px;
+   padding: 14px 30px;   
+}
+
+.banner_box .btn-cta:hover {
+   color: white;
+}
+   
+.banner_box p {
+   color: #444;
+   font-size: 30px;
+   font-weight: bold;
+   margin-bottom: 30px;
+}
+   
+/* ===========================================
+   Main
+   =========================================== */
+   
+/* left */
+   
+.mainleft {
+   padding: 30px 15px 0 15px;
+}
+   
+#gallery {
+   margin: 35px 0;
+}
+   
+/* right */
+   
+.mainright {
+   padding: 30px 15px 0 15px;
+}
+   
+.mainright h3 a {
+   border-bottom: 1px solid #cccccc;
+   color: #333;
+}
+   
+.mainright h3 a:hover {
+   color: #be0a35;
+   text-decoration: none;
+}
+   
+.workshop .date {
+   border: 1px solid #ccc;
+}
+
+.workshop .day {
+   font-size: 60px;
+   line-height: 1em;
+}
+   
+.readmore {
+   display: block;
+   margin-top: 10px;
+}
+   
+   
+   
+   
+   
+   

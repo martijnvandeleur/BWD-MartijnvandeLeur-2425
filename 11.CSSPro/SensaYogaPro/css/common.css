@@ -1,0 +1,116 @@
+/**
+ * Common styles
+ *
+ * @author Rogier van der Linde <rogier.vanderlinde@kahosl.be>
+ *
+ */
+
+/* ===========================================
+   General
+   =========================================== */
+
+/* reset */
+
+* {
+   box-sizing: border-box; /* width and height include paddings and borders */
+   margin: 0; /* wipe out browser differences */
+   padding: 0; /* wipe out browser differences */ 
+}
+
+img {
+   border: 0;
+   max-width: 100%;
+}
+   
+body {
+   background-color: #f5f5f5;
+   font-family: Arial, Verdana, Tahoma, sans-serif;
+   font-size: 14px; 
+   line-height: 1.4;
+}
+
+/* elements */
+
+h1, h2, h3 {
+   font-family: "Montserrat Alternates", Arial, Helvetica, sans-serif;
+}
+
+h2 {
+   color: #333;
+   font-size: 24px;
+   font-weight: normal;
+   margin-bottom: 25px;
+}
+
+h3 {
+   font-size: 18px;
+   font-weight: normal;
+   margin-bottom: 20px;
+}
+
+p {
+   margin-bottom: 20px;
+}
+
+a {
+   color: #519A8E;
+   text-decoration: none;
+}
+
+a:hover {
+   color: #7CBAA5;
+   text-decoration: underline;
+}
+
+/* classes */
+
+a.lnk-cta {
+   font-size: 20px;
+}
+
+a.lnk-cta::after {
+   content: " »";
+}
+
+.btn-cta {
+   background-color: #519A8E;
+   border-bottom: 3px solid rgba(0, 0, 0, 0.15);
+   border-radius: 3px;
+   color: #fff;
+   cursor: pointer;
+   display: inline-block;
+   font-size: 16px;
+   font-weight: 600;
+   padding: 8px 16px;   
+   text-transform: uppercase;
+   transition: background 0.5s;
+   white-space: nowrap;
+}
+
+a.btn-cta {
+   text-decoration: none;
+}
+
+a.btn-cta:hover {
+   color: #fff;
+}
+
+.btn-cta:hover {
+   background-color: #7CBAA5;
+}
+
+/* ===========================================
+   Main content
+   =========================================== */
+
+/* general */
+
+main .wrapper {
+   background-color: #fff;
+   padding-bottom: 50px;
+}
+
+main p {
+   color: #666;
+   line-height: 20px;
+}
